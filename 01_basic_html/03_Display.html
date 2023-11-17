@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <Style>
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        p,div,span,a{
+            border: 2px solid black;
+        }
+
+        .modify{
+            display: inline;
+        }
+        .modify2{
+            display: block;
+        }
+    </Style>
+</head>
+<body>
+    <h2>block level</h2>
+    <p>This is a p tag</p>
+    <div>This is a div tag</div>
+    <h2>Inline level</h2>
+    <span>This is a span tag</span>
+    <a href="#">This is anchor tag</a>
+    <br><br>
+    <hr><hr>
+    <h2>Modify with display prop</h2>
+    <p class="modify">apply display prop on p tag</p>
+    <div class="modify">apply display prop on div tag</div>
+    <a href="#">This achor tag</a>
+    <br><br>
+    <hr>
+    <span class="modify2">display block prop on span tag</span><br>
+    <a href="" class="modify2">display block prop on anchor tag</a>
+    <br><br>
+    <hr><hr>
+
+    
+</body>
+</html>
