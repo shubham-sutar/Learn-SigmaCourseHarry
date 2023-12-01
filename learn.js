@@ -70,3 +70,56 @@ do{
     console.log(j);
     j++;
 }while(j<=num);
+
+//foreach loop
+
+let numArr = [1,2,3,4,5,6];
+let newnumArr = [];
+
+// numArr.forEach(items => {
+//     console.log(items);
+// });
+
+// function myFunc(items){
+//     console.log(items);
+// }
+
+numArr.forEach(items =>{
+    console.log(items);
+    newnumArr.push(items);
+})
+
+let charArr = ['a','b','c','d'];
+
+for(const newChar of charArr){
+    console.log(newChar);
+}
+
+for (const key in charArr) {
+    console.log(charArr[key])
+}
+
+function newFunc(num1,num2){
+    let result = num1 + num2;
+    return result;
+}
+
+let add = newFunc(12,12);
+console.log(add);
+
+let digit = (num1,num2) =>{
+    return num1 + num2;
+}
+
+console.log(digit(14,12));
+
+student = {
+    Fname : 'sayali sutar',
+    age : 24,
+    home : 'kolhapur',
+    qual : 'engineer'
+}
+
+for (const key in student) {
+    console.log(key,'-',student[key]);
+}
