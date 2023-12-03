@@ -81,3 +81,60 @@ for (const items of charArr) {
     console.log(items);
 }
 
+//MAP
+
+let numArr = [10,30,40,20];
+let newnumArr = [];
+
+// for (let i = 0; i < numArr.length; i++) {
+//     const element = numArr[i];
+//     newnumArr.push(element+10);
+// }
+
+newnumArr = numArr.map((items)=>{
+    return items+20;
+})
+
+console.log(newnumArr);
+
+// FILTER
+
+let digitArr = [1,3,2,4,5,7,6,8,9,0];
+let newDigitArr = digitArr.filter((items)=>{
+    return items<5;
+})
+
+console.log(newDigitArr);
+
+// REDUCE
+
+let bill = [80,10,500,100,200];
+
+let total = bill.reduce((acc,current) =>{
+    return acc+current
+},0)
+
+console.log(total);
+
+let course = [{
+    courseName:'java',
+    price: 799
+},
+{
+    courseName:'python',
+    price: 1100
+},
+{
+    courseName:'webdev',
+    price: 2299
+}];
+
+let newBill = course.reduce((acc,current) =>{
+    return acc + current.price;
+},0)
+
+console.log(newBill);
+
+//ARRAY.FROM
+
+console.log(Array.from("shubham"));
