@@ -51,3 +51,13 @@ for (let i = 0; i < mypara.length; i++) {
     mypara[i].style.fontSize = '16px';
     
 }
+
+// hoisting
+console.log(a);
+var a = 5;
+
+fname();
+
+function fname(){
+    console.log('shubham');
+}
